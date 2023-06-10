@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Hanken";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue-background: hsl(252, 100%, 62%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --hanken: "Hanken", sans-serif;
+}
+
+body {
+  font-family: var(--hanken);
+  background-color: white;
+}
+
+.wrapper {
+  padding-bottom: 0.5em;
+}
+
+.container {
+  background-color: var(--White);
+}
+
+/* START Summary Section */
+
+.results-container {
+  text-align: center;
+  background: linear-gradient(
+    var(--Light-slate-blue-background) 20%,
+    var(--Light-royal-blue-background) 90%
+  );
+  padding: 1.3em 3em;
+  height: 19.8em;
+  border-radius: 0 0 2em 2em;
+  color: var(--Light-lavender);
+}
+
+.heading {
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    var(--Violet-blue-circle),
+    var(--Persian-blue-circle) 95%
+  );
+  border-radius: 50%;
+  width: 7.8em;
+  height: 7.8em;
+  margin: 1.25em auto;
+}
+
+.main-score {
+  font-size: 3.1rem;
+  color: var(--White);
+}
+
+.score-range {
+  color: var(--Light-lavender);
+  opacity: 0.6;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.text-great {
+  font-weight: 700;
+  color: var(--Pale-blue);
+  font-size: 1.4rem;
+  padding-bottom: 0.3em;
+}
+
+.result-info {
+  font-size: 0.89rem;
+  font-weight: 500;
+  color: var(--Light-lavender);
+  opacity: 0.8;
+}
+
+/* END Summury Section */
+
+/* START Summury Section */
+
+.summary-container {
+  color: var(--Dark-gray-blue);
+  padding: 1.3em 1.65em;
+}
+
+.summary-heading {
+  font-size: 1.05rem;
+  font-weight: 900;
+  padding-bottom: 1.25em;
+}
+
+.sense {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9em 0.87em;
+  border-radius: 0.6em;
+  margin-bottom: 0.95em;
+}
+
+.sense-info {
+  display: flex;
+  gap: 0.7em;
+}
+
+.sense-title {
+  font-size: 0.9em;
+}
+.sense strong {
+  font-weight: 700;
+}
+
+.sense.reaction strong {
+  color: var(--Light-red);
+}
+
+.sense.memory strong {
+  color: var(--Orangey-yellow);
+}
+
+.sense.verbal strong {
+  color: var(--Green-teal);
+}
+
+.sense.visual strong {
+  color: var(--Cobalt-blue);
+}
+
+.sense-results {
+  color: hsla(224, 30%, 27%, 0.4);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.text-bold {
+  color: var(--Dark-gray-blue);
+}
+
+.sense.reaction {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.sense.memory {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.sense.verbal {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.sense.visual {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.continue-button {
+  width: 100%;
+  border: none;
+  border-radius: 2em;
+  font-size: 1rem;
+  background-color: var(--Dark-gray-blue);
+  font-family: var(--hanken);
+  font-weight: 500;
+  color: white;
+  padding: 0.9em;
+  margin-top: 0.4em;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background: linear-gradient(
+    var(--Light-slate-blue-background),
+    var(--Light-royal-blue-background)
+  );
+}
+
+/* END Summury Section */
+
+/* START Attribution */
+
+.attribution {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  background-color: hsla(224, 30%, 27%, 0.3);
+  border-radius: 1em;
+  padding: 0.2em 1.5em;
+}
+
+.attribution a {
+  color: var(--Cobalt-blue);
+}
+
+/* END Attribution */
+
+@media (min-width: 50em) {
+  .wrapper {
+    align-items: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0.5em 0.5em 2em hsla(224, 30%, 27%, 0.15);
+    max-width: 40.75em;
+    border-radius: 1.9em;
+  }
+
+  .results-container {
+    max-width: 20.35em;
+    border-radius: 1.8em;
+    height: auto;
+    padding: 2.05em 3.5em 3.05em 3.5em;
+  }
+  .summary-container {
+    max-width: 23em;
+    padding: 2.2em;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .score-container {
+    width: 11.1em;
+    height: 11.1em;
+    margin: 1.95em auto 1.6em auto;
+  }
+
+  .main-score {
+    font-size: 4rem;
+  }
+
+  .text-great {
+    font-size: 1.75rem;
+    padding-bottom: 0.45em;
+  }
+
+  .result-info {
+    font-size: 0.98rem;
+  }
+
+  .continue-button {
+    margin-top: 1.4em;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0.4em;
+  }
+}
