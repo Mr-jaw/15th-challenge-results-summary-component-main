@@ -3,7 +3,7 @@ import Score from "./Score";
 const Reuslts = () => {
   return (
     <div className="results-container">
-      <h2 className="heading summury-heading">Your Result</h2>
+      <h1 className="heading summury-heading">Your Result</h1>
       <Score />
       <p className="text-great">Great</p>
       <p className="result-info">
