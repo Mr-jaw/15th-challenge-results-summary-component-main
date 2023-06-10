@@ -1,8 +1,8 @@
 import data from "../data/data";
 import ReactionIcon from "../assets/images/icon-reaction.svg";
-import MemoryIcon from "../assets/images/icon-reaction.svg";
-import VerbalIcon from "../assets/images/icon-reaction.svg";
-import VisualIcon from "../assets/images/icon-reaction.svg";
+import MemoryIcon from "../assets/images/icon-memory.svg";
+import VerbalIcon from "../assets/images/icon-verbal.svg";
+import VisualIcon from "../assets/images/icon-visual.svg";
 
 const ScoreSummary = () => {
   return (
