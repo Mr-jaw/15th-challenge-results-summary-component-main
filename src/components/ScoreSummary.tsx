@@ -1,11 +1,15 @@
 import data from "../data/data";
+import ReactionIcon from "../assets/images/icon-reaction.svg";
+import MemoryIcon from "../assets/images/icon-reaction.svg";
+import VerbalIcon from "../assets/images/icon-reaction.svg";
+import VisualIcon from "../assets/images/icon-reaction.svg";
 
 const ScoreSummary = () => {
   return (
     <>
       <div className="sense reaction">
         <div className="sense-info ">
-          <img src={data[0].icon} alt="" className="sense-icon" />
+          <img src={ReactionIcon} alt="" className="sense-icon" />
           <strong className="sense-title">{data[0].category}</strong>
         </div>
         <p className="sense-results">
@@ -14,7 +18,7 @@ const ScoreSummary = () => {
       </div>
       <div className="sense memory">
         <div className="sense-info ">
-          <img src={data[1].icon} alt="" className="sense-icon" />
+          <img src={MemoryIcon} alt="" className="sense-icon" />
           <strong className="sense-title">{data[1].category}</strong>
         </div>
         <p className="sense-results">
@@ -23,7 +27,7 @@ const ScoreSummary = () => {
       </div>
       <div className="sense verbal">
         <div className="sense-info ">
-          <img src={data[2].icon} alt="" className="sense-icon" />
+          <img src={VerbalIcon} alt="" className="sense-icon" />
           <strong className="sense-title">{data[2].category}</strong>
         </div>
         <p className="sense-results">
@@ -32,7 +36,7 @@ const ScoreSummary = () => {
       </div>
       <div className="sense visual">
         <div className="sense-info">
-          <img src={data[3].icon} alt="" className="sense-icon" />
+          <img src={VisualIcon} alt="" className="sense-icon" />
           <strong className="sense-title">{data[3].category}</strong>
         </div>
         <p className="sense-results">
