@@ -6,7 +6,10 @@ const Footer = () => {
         Frontend Mentor
       </a>
       . Coded by{" "}
-      <a href="https://www.frontendmentor.io/profile/Mr-jaw">@Mr-jaw</a>.
+      <a href="https://www.frontendmentor.io/profile/Mr-jaw" target="_blank">
+        @Mr-jaw
+      </a>
+      .
     </footer>
   );
 };
