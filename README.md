@@ -21,8 +21,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-results-summary-component-using-css-grid-and-flex-box-5bwpjm5qAJ)
+- Live Site URL: [Live Site](https://meek-semolina-f193f6.netlify.app/)
 
 ## My process
 
